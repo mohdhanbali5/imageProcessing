@@ -1,0 +1,77 @@
+{
+  "scene_image": "C:\\Users\\user\\OneDrive\\Desktop\\img_project\\images\\scene_usb.png",
+  "object_image": "C:\\Users\\user\\OneDrive\\Desktop\\img_project\\images\\object_usb.png",
+  "selected_method": "hybrid",
+  "auto_crop_query": true,
+  "methods": [
+    {
+      "method": "template",
+      "confidence": 67.32,
+      "coordinates": {
+        "x": 502,
+        "y": 75,
+        "width": 192,
+        "height": 179
+      },
+      "runtime_seconds": 1.465,
+      "extra": {
+        "scale": 0.35,
+        "angle": -25,
+        "masked": true,
+        "processing_scale": 0.7616707616707616
+      }
+    },
+    {
+      "method": "edge",
+      "confidence": 72.48,
+      "coordinates": {
+        "x": 140,
+        "y": 353,
+        "width": 180,
+        "height": 161
+      },
+      "runtime_seconds": 1.468,
+      "extra": {
+        "scale": 0.35,
+        "angle": -15,
+        "masked": true,
+        "processing_scale": 0.7616707616707616
+      }
+    },
+    {
+      "method": "histogram",
+      "confidence": 24.44,
+      "coordinates": {
+        "x": 524,
+        "y": 148,
+        "width": 152,
+        "height": 127
+      },
+      "runtime_seconds": 2.78,
+      "extra": {
+        "mode": "sliding_histogram_refined",
+        "processing_scale": 0.7616707616707616
+      }
+    },
+    {
+      "method": "hybrid",
+      "confidence": 96.37,
+      "coordinates": {
+        "x": 528,
+        "y": 311,
+        "width": 177,
+        "height": 147
+      },
+      "runtime_seconds": 0.007,
+      "extra": {
+        "chosen_from": "usb_on_green_book_candidate",
+        "reason": "USB is low-saturation and located as non-green object on green book",
+        "template_score": 0.6731824725866318,
+        "edge_score": 0.7247701585292816,
+        "histogram_score": 0.2443966418504715,
+        "usb_candidate_score": 0.7136557270192606,
+        "processing_scale": 0.7616707616707616
+      }
+    }
+  ]
+}

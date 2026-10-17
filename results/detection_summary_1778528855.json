@@ -1,0 +1,79 @@
+{
+  "scene_image": "C:\\Users\\user\\OneDrive\\Desktop\\img_project\\images\\scene_book.png",
+  "object_image": "C:\\Users\\user\\OneDrive\\Desktop\\img_project\\images\\object_book_o.png",
+  "selected_method": "edge",
+  "auto_crop_query": true,
+  "methods": [
+    {
+      "method": "template",
+      "confidence": 88.53,
+      "coordinates": {
+        "x": 480,
+        "y": 56,
+        "width": 179,
+        "height": 243
+      },
+      "runtime_seconds": 1.114,
+      "extra": {
+        "scale": 0.35,
+        "angle": 0,
+        "masked": true,
+        "processing_scale": 0.46827794561933533
+      }
+    },
+    {
+      "method": "edge",
+      "confidence": 82.17,
+      "coordinates": {
+        "x": 192,
+        "y": 290,
+        "width": 179,
+        "height": 243
+      },
+      "runtime_seconds": 1.14,
+      "extra": {
+        "scale": 0.35,
+        "angle": 0,
+        "masked": true,
+        "processing_scale": 0.46827794561933533
+      }
+    },
+    {
+      "method": "histogram",
+      "confidence": 70.26,
+      "coordinates": {
+        "x": 160,
+        "y": 218,
+        "width": 587,
+        "height": 513
+      },
+      "runtime_seconds": 0.015,
+      "extra": {
+        "mode": "foreground_color_segmentation",
+        "hist_score": 0.5202732086181641,
+        "fill_ratio": 0.7446924223500897,
+        "component_area": 36971,
+        "processing_scale": 0.46827794561933533
+      }
+    },
+    {
+      "method": "hybrid",
+      "confidence": 92.26,
+      "coordinates": {
+        "x": 160,
+        "y": 218,
+        "width": 587,
+        "height": 513
+      },
+      "runtime_seconds": 0.001,
+      "extra": {
+        "chosen_from": "Color Histogram Matching",
+        "reason": "colored object histogram segmentation",
+        "template_score": 0.8853219747543335,
+        "edge_score": 0.821662187576294,
+        "histogram_score": 0.7025693893432616,
+        "processing_scale": 0.46827794561933533
+      }
+    }
+  ]
+}
